@@ -1,5 +1,5 @@
-# eleventy-site
-Simple eleventy starter site.
+# Сайт "Штаба Кандидатов"
+Статический сайт на основе [Eleventy](https://www.11ty.dev/).
 
 ### Start the dev server
 ```
