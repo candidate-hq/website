@@ -21,21 +21,17 @@ title: Главная
 
     <h3>Основатели «Штаба кандидатов»</h3>
     <div class="people">
-        <figure class="person">
-            <img src="https://shtab.kisiev.ru/wp-content/uploads/2023/07/4photo_2023-07-30_15-00-17-640x395.jpg">
-            <figcaption>
-                <span class="person-name">Дмитрий Кисиев</span>,
-                основатель «Штаба кандидатов»
-            </figcaption>
-        </figure>
 
+{% for person in people.leaders %}
         <figure class="person">
-            <img src="https://shtab.kisiev.ru/wp-content/uploads/2023/07/foto-artemev1-640x395.jpg">
+            <img src="{{person.photoUrl}}">
             <figcaption>
-                <span class="person-name">Игорь Артемьев</span>,
-                глава федерального «Штаба кандидатов»
+                <span class="person-name">{{person.name}}</span>,
+                <span class="person-worktitle">{{person.title}}</span>
             </figcaption>
         </figure>
+{% endfor %}
+
     </div>
 </section>
 
